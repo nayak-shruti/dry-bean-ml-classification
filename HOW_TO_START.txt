@@ -1,0 +1,16 @@
+START HERE
+
+1. Create a free Google Colab notebook or use your computer with Python 3.10+.
+2. Upload this project folder / ZIP and unzip it.
+3. In a terminal (or Colab cell), run:
+   pip install -r requirements.txt
+   python train_models.py
+4. The script fetches the official UCI Dry Bean dataset, trains the five classifiers,
+   and creates test_data.csv plus model/*.joblib and model/metrics.json.
+5. Run:
+   streamlit run app.py
+6. Only after training, upload the complete project including model files to GitHub.
+7. Deploy app.py using Streamlit Community Cloud.
+
+The first training run requires internet access to retrieve UCI dataset ID 602.
+Do not submit empty model folders. Do not fabricate the required BITS Lab screenshot.
