@@ -11,7 +11,7 @@ from sklearn.metrics import (
 )
 
 ROOT = Path(__file__).resolve().parent
-MODEL_DIR = ROOT / "model"
+MODEL_DIR = ROOT / "model" / "model"
 st.set_page_config(page_title="Dry Bean Classifier | ML Assignment 2",
                    page_icon="🫘", layout="wide")
 
