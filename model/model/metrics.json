@@ -1,0 +1,736 @@
+{
+  "dataset": "UCI Dry Bean",
+  "uci_dataset_id": 602,
+  "random_state": 42,
+  "test_size": 0.2,
+  "original_instances": 13611,
+  "duplicates_removed": 68,
+  "instances_after_duplicate_removal": 13543,
+  "training_instances": 10834,
+  "test_instances": 2709,
+  "feature_names": [
+    "Area",
+    "Perimeter",
+    "MajorAxisLength",
+    "MinorAxisLength",
+    "AspectRatio",
+    "Eccentricity",
+    "ConvexArea",
+    "EquivDiameter",
+    "Extent",
+    "Solidity",
+    "Roundness",
+    "Compactness",
+    "ShapeFactor1",
+    "ShapeFactor2",
+    "ShapeFactor3",
+    "ShapeFactor4"
+  ],
+  "target_name": "Class",
+  "classes": [
+    "BARBUNYA",
+    "BOMBAY",
+    "CALI",
+    "DERMASON",
+    "HOROZ",
+    "SEKER",
+    "SIRA"
+  ],
+  "metrics": {
+    "Logistic Regression": {
+      "accuracy": 0.9195275009228497,
+      "auc": 0.9934531880963212,
+      "precision": 0.9201155383128901,
+      "recall": 0.9195275009228497,
+      "f1": 0.9196670651405702,
+      "mcc": 0.9027600755701143,
+      "classification_report": {
+        "BARBUNYA": {
+          "precision": 0.9254901960784314,
+          "recall": 0.8905660377358491,
+          "f1-score": 0.9076923076923077,
+          "support": 265.0
+        },
+        "BOMBAY": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 104.0
+        },
+        "CALI": {
+          "precision": 0.9109792284866469,
+          "recall": 0.941717791411043,
+          "f1-score": 0.9260935143288085,
+          "support": 326.0
+        },
+        "DERMASON": {
+          "precision": 0.9265129682997119,
+          "recall": 0.9069111424541608,
+          "f1-score": 0.9166072701354241,
+          "support": 709.0
+        },
+        "HOROZ": {
+          "precision": 0.9642857142857143,
+          "recall": 0.9435483870967742,
+          "f1-score": 0.9538043478260869,
+          "support": 372.0
+        },
+        "SEKER": {
+          "precision": 0.9318734793187348,
+          "recall": 0.9433497536945813,
+          "f1-score": 0.9375764993880049,
+          "support": 406.0
+        },
+        "SIRA": {
+          "precision": 0.8584558823529411,
+          "recall": 0.8861480075901328,
+          "f1-score": 0.8720821661998133,
+          "support": 527.0
+        },
+        "accuracy": 0.9195275009228497,
+        "macro avg": {
+          "precision": 0.9310853526888828,
+          "recall": 0.9303201599975058,
+          "f1-score": 0.9305508722243493,
+          "support": 2709.0
+        },
+        "weighted avg": {
+          "precision": 0.9201155383128901,
+          "recall": 0.9195275009228497,
+          "f1-score": 0.9196670651405702,
+          "support": 2709.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          236,
+          0,
+          18,
+          0,
+          0,
+          4,
+          7
+        ],
+        [
+          0,
+          104,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          307,
+          0,
+          5,
+          2,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          643,
+          0,
+          13,
+          53
+        ],
+        [
+          1,
+          0,
+          11,
+          5,
+          351,
+          0,
+          4
+        ],
+        [
+          9,
+          0,
+          0,
+          5,
+          0,
+          383,
+          9
+        ],
+        [
+          1,
+          0,
+          1,
+          41,
+          8,
+          9,
+          467
+        ]
+      ],
+      "class_names": [
+        "BARBUNYA",
+        "BOMBAY",
+        "CALI",
+        "DERMASON",
+        "HOROZ",
+        "SEKER",
+        "SIRA"
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 0.8959025470653378,
+      "auc": 0.9470936432688198,
+      "precision": 0.8957904896867611,
+      "recall": 0.8959025470653378,
+      "f1": 0.8954992527062784,
+      "mcc": 0.8742575018438734,
+      "classification_report": {
+        "BARBUNYA": {
+          "precision": 0.8480565371024735,
+          "recall": 0.9056603773584906,
+          "f1-score": 0.8759124087591241,
+          "support": 265.0
+        },
+        "BOMBAY": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 104.0
+        },
+        "CALI": {
+          "precision": 0.9138461538461539,
+          "recall": 0.911042944785276,
+          "f1-score": 0.9124423963133641,
+          "support": 326.0
+        },
+        "DERMASON": {
+          "precision": 0.8885832187070152,
+          "recall": 0.9111424541607899,
+          "f1-score": 0.8997214484679665,
+          "support": 709.0
+        },
+        "HOROZ": {
+          "precision": 0.9502762430939227,
+          "recall": 0.9247311827956989,
+          "f1-score": 0.9373297002724795,
+          "support": 372.0
+        },
+        "SEKER": {
+          "precision": 0.9132530120481928,
+          "recall": 0.9334975369458128,
+          "f1-score": 0.9232643118148599,
+          "support": 406.0
+        },
+        "SIRA": {
+          "precision": 0.845841784989858,
+          "recall": 0.7912713472485768,
+          "f1-score": 0.8176470588235294,
+          "support": 527.0
+        },
+        "accuracy": 0.8959025470653378,
+        "macro avg": {
+          "precision": 0.9085509928268023,
+          "recall": 0.9110494061849492,
+          "f1-score": 0.9094739034930461,
+          "support": 2709.0
+        },
+        "weighted avg": {
+          "precision": 0.8957904896867611,
+          "recall": 0.8959025470653378,
+          "f1-score": 0.8954992527062784,
+          "support": 2709.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          240,
+          0,
+          15,
+          1,
+          0,
+          3,
+          6
+        ],
+        [
+          0,
+          104,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          21,
+          0,
+          297,
+          0,
+          5,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          646,
+          1,
+          10,
+          52
+        ],
+        [
+          6,
+          0,
+          11,
+          5,
+          344,
+          0,
+          6
+        ],
+        [
+          8,
+          0,
+          0,
+          9,
+          0,
+          379,
+          10
+        ],
+        [
+          8,
+          0,
+          2,
+          66,
+          12,
+          22,
+          417
+        ]
+      ],
+      "class_names": [
+        "BARBUNYA",
+        "BOMBAY",
+        "CALI",
+        "DERMASON",
+        "HOROZ",
+        "SEKER",
+        "SIRA"
+      ]
+    },
+    "K-Nearest Neighbors": {
+      "accuracy": 0.9136212624584718,
+      "auc": 0.983471273408488,
+      "precision": 0.9144004597560045,
+      "recall": 0.9136212624584718,
+      "f1": 0.9138032741257271,
+      "mcc": 0.8955546240099437,
+      "classification_report": {
+        "BARBUNYA": {
+          "precision": 0.924,
+          "recall": 0.8716981132075472,
+          "f1-score": 0.8970873786407767,
+          "support": 265.0
+        },
+        "BOMBAY": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 104.0
+        },
+        "CALI": {
+          "precision": 0.8947368421052632,
+          "recall": 0.9386503067484663,
+          "f1-score": 0.9161676646706587,
+          "support": 326.0
+        },
+        "DERMASON": {
+          "precision": 0.9135977337110481,
+          "recall": 0.9097320169252469,
+          "f1-score": 0.911660777385159,
+          "support": 709.0
+        },
+        "HOROZ": {
+          "precision": 0.961218836565097,
+          "recall": 0.9327956989247311,
+          "f1-score": 0.946793997271487,
+          "support": 372.0
+        },
+        "SEKER": {
+          "precision": 0.9454094292803971,
+          "recall": 0.9384236453201971,
+          "f1-score": 0.9419035846724351,
+          "support": 406.0
+        },
+        "SIRA": {
+          "precision": 0.848987108655617,
+          "recall": 0.8747628083491461,
+          "f1-score": 0.8616822429906542,
+          "support": 527.0
+        },
+        "accuracy": 0.9136212624584718,
+        "macro avg": {
+          "precision": 0.9268499929024889,
+          "recall": 0.923723227067905,
+          "f1-score": 0.9250422350901673,
+          "support": 2709.0
+        },
+        "weighted avg": {
+          "precision": 0.9144004597560045,
+          "recall": 0.9136212624584718,
+          "f1-score": 0.9138032741257271,
+          "support": 2709.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          231,
+          0,
+          22,
+          0,
+          1,
+          4,
+          7
+        ],
+        [
+          0,
+          104,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          306,
+          0,
+          6,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          645,
+          0,
+          11,
+          53
+        ],
+        [
+          0,
+          0,
+          14,
+          4,
+          347,
+          0,
+          7
+        ],
+        [
+          6,
+          0,
+          0,
+          6,
+          0,
+          381,
+          13
+        ],
+        [
+          3,
+          0,
+          0,
+          51,
+          7,
+          5,
+          461
+        ]
+      ],
+      "class_names": [
+        "BARBUNYA",
+        "BOMBAY",
+        "CALI",
+        "DERMASON",
+        "HOROZ",
+        "SEKER",
+        "SIRA"
+      ]
+    },
+    "Gaussian Naive Bayes": {
+      "accuracy": 0.8970099667774086,
+      "auc": 0.9898795733602761,
+      "precision": 0.8996526040384818,
+      "recall": 0.8970099667774086,
+      "f1": 0.8971987029593252,
+      "mcc": 0.8761707062067166,
+      "classification_report": {
+        "BARBUNYA": {
+          "precision": 0.871900826446281,
+          "recall": 0.7962264150943397,
+          "f1-score": 0.8323471400394478,
+          "support": 265.0
+        },
+        "BOMBAY": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 104.0
+        },
+        "CALI": {
+          "precision": 0.8575498575498576,
+          "recall": 0.9233128834355828,
+          "f1-score": 0.8892171344165436,
+          "support": 326.0
+        },
+        "DERMASON": {
+          "precision": 0.9370199692780338,
+          "recall": 0.8603667136812412,
+          "f1-score": 0.8970588235294118,
+          "support": 709.0
+        },
+        "HOROZ": {
+          "precision": 0.9539295392953929,
+          "recall": 0.946236559139785,
+          "f1-score": 0.9500674763832658,
+          "support": 372.0
+        },
+        "SEKER": {
+          "precision": 0.9223300970873787,
+          "recall": 0.9359605911330049,
+          "f1-score": 0.9290953545232273,
+          "support": 406.0
+        },
+        "SIRA": {
+          "precision": 0.8137931034482758,
+          "recall": 0.8956356736242884,
+          "f1-score": 0.8527551942186089,
+          "support": 527.0
+        },
+        "accuracy": 0.8970099667774086,
+        "macro avg": {
+          "precision": 0.9080747704436029,
+          "recall": 0.9082484051583204,
+          "f1-score": 0.9072201604443578,
+          "support": 2709.0
+        },
+        "weighted avg": {
+          "precision": 0.8996526040384818,
+          "recall": 0.8970099667774086,
+          "f1-score": 0.8971987029593252,
+          "support": 2709.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          211,
+          0,
+          40,
+          0,
+          1,
+          2,
+          11
+        ],
+        [
+          0,
+          104,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          19,
+          0,
+          301,
+          0,
+          5,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          610,
+          0,
+          21,
+          78
+        ],
+        [
+          0,
+          0,
+          10,
+          4,
+          352,
+          0,
+          6
+        ],
+        [
+          8,
+          0,
+          0,
+          5,
+          0,
+          380,
+          13
+        ],
+        [
+          4,
+          0,
+          0,
+          32,
+          11,
+          8,
+          472
+        ]
+      ],
+      "class_names": [
+        "BARBUNYA",
+        "BOMBAY",
+        "CALI",
+        "DERMASON",
+        "HOROZ",
+        "SEKER",
+        "SIRA"
+      ]
+    },
+    "Support Vector Machine": {
+      "accuracy": 0.9239571797711332,
+      "auc": 0.9932377682964951,
+      "precision": 0.9241110887460804,
+      "recall": 0.9239571797711332,
+      "f1": 0.9239989918658553,
+      "mcc": 0.9080187909595632,
+      "classification_report": {
+        "BARBUNYA": {
+          "precision": 0.926923076923077,
+          "recall": 0.909433962264151,
+          "f1-score": 0.9180952380952381,
+          "support": 265.0
+        },
+        "BOMBAY": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 104.0
+        },
+        "CALI": {
+          "precision": 0.9300911854103343,
+          "recall": 0.9386503067484663,
+          "f1-score": 0.934351145038168,
+          "support": 326.0
+        },
+        "DERMASON": {
+          "precision": 0.9183098591549296,
+          "recall": 0.919605077574048,
+          "f1-score": 0.9189570119802678,
+          "support": 709.0
+        },
+        "HOROZ": {
+          "precision": 0.967032967032967,
+          "recall": 0.946236559139785,
+          "f1-score": 0.9565217391304348,
+          "support": 372.0
+        },
+        "SEKER": {
+          "precision": 0.9393203883495146,
+          "recall": 0.9532019704433498,
+          "f1-score": 0.9462102689486552,
+          "support": 406.0
+        },
+        "SIRA": {
+          "precision": 0.869811320754717,
+          "recall": 0.8747628083491461,
+          "f1-score": 0.8722800378429517,
+          "support": 527.0
+        },
+        "accuracy": 0.9239571797711332,
+        "macro avg": {
+          "precision": 0.9359269710893628,
+          "recall": 0.9345558120741352,
+          "f1-score": 0.935202205862245,
+          "support": 2709.0
+        },
+        "weighted avg": {
+          "precision": 0.9241110887460804,
+          "recall": 0.9239571797711332,
+          "f1-score": 0.9239989918658553,
+          "support": 2709.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          241,
+          0,
+          16,
+          0,
+          0,
+          3,
+          5
+        ],
+        [
+          0,
+          104,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          306,
+          0,
+          6,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          652,
+          0,
+          12,
+          45
+        ],
+        [
+          1,
+          0,
+          6,
+          5,
+          352,
+          0,
+          8
+        ],
+        [
+          5,
+          0,
+          0,
+          5,
+          0,
+          387,
+          9
+        ],
+        [
+          3,
+          0,
+          1,
+          48,
+          6,
+          8,
+          461
+        ]
+      ],
+      "class_names": [
+        "BARBUNYA",
+        "BOMBAY",
+        "CALI",
+        "DERMASON",
+        "HOROZ",
+        "SEKER",
+        "SIRA"
+      ]
+    }
+  }
+}
