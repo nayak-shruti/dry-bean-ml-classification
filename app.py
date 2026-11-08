@@ -32,7 +32,7 @@ def load_artifacts():
     with open(metrics_path, encoding="utf-8") as f:
         metadata = json.load(f)
     models = {}
-        for name, filename in MODEL_FILES.items():
+    for name, filename in MODEL_FILES.items():
         path = MODEL_DIR / filename
         if path.exists():
             models[name] = joblib.load(path)
