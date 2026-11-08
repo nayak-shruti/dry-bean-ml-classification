@@ -2,6 +2,7 @@ from pathlib import Path
 import json
 import joblib
 import pandas as pd
+from sklearn.impute import SimpleImputer
 import streamlit as st
 import matplotlib.pyplot as plt
 from sklearn.metrics import (
@@ -31,10 +32,20 @@ def load_artifacts():
     with open(metrics_path, encoding="utf-8") as f:
         metadata = json.load(f)
     models = {}
-    for name, filename in MODEL_FILES.items():
+        for name, filename in MODEL_FILES.items():
         path = MODEL_DIR / filename
         if path.exists():
             models[name] = joblib.load(path)
+
+    # Compatibility fix for older saved SimpleImputer models
+    for model in models.values():
+        preprocess = model.named_steps.get("preprocess")
+        if preprocess is not None:
+            imputer = preprocess.named_steps.get("imputer")
+            if isinstance(imputer, SimpleImputer):
+                if not hasattr(imputer, "_fill_dtype"):
+                    imputer._fill_dtype = imputer.statistics_.dtype
+
     return metadata, models
 
 st.title("🫘 Dry Bean Variety Classification")
